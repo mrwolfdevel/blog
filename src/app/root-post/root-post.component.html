@@ -1,0 +1,16 @@
+<h2>latest blog posts</h2>
+
+
+<ol reversed class="postlist" style="counter-reset: start-from 6">
+
+
+  <li class="postlist-item" *ngFor="let post of posts; let i = index" >
+            <a href="/post/{{post.id}}" class="postlist-link">{{post.title}}</a>
+
+  </li>
+
+
+</ol>
+
+<a href="/post">All posts</a>
+      <br>

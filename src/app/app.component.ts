@@ -8,19 +8,6 @@ import { PostService } from './post.service';
   providers: [PostService],
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'blog';
-  posts: any[] = [] ;
-
-  constructor(
-  private postSrv: PostService
-  ){}
-
-  ngOnInit(){
-
-    this.postSrv.getPostStart().subscribe((data) => {
-
-      this.posts = data;
-    })
-  }
 }
